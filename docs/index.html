@@ -1,6 +1,5 @@
 ﻿<!doctype html>
 <!-- Using application cache -->
-<html manifest="cache.manifest">
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
@@ -11,9 +10,6 @@
 <!-- その他 -->
 <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5" />
 
-<!-- vue.js　-->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<link rel="manifest" href="manifest.json">
   
 <title>家系図描画</title>
 <link REL="stylesheet" type="text/css" HREF="index.css" media="all">
@@ -90,16 +86,6 @@
 <script src="src/indexWrapPaper.js" type="text/javascript" charset="utf-8">
 </script>
   
-<script>
-    <!-- service workerの登録関係 -->
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service_worker.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }).catch(function(err) {
-        console.log('ServiceWorker registration failed: ', err);
-    });
-    }
-</script>
 
 <p style="text-align:right;background-color:white;color:black;border-style:none;clear:both;"><a href="/contact"><img src="/image/ecl_footer.png" alt="operated by Kindai ECL" /></a></p></body>
 </html>
