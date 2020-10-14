@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<!-- Using application cache -->
+<html manifest="cache.manifest">
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<!--フルスクリーン -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- ステータスバーを黒にする-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- その他 -->
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1.5, minimum-scale=0.5" />
+
+<title>家系図描画</title>
+<link REL="stylesheet" type="text/css" HREF="index.css" media="all">
+<link REL="stylesheet" type="text/css" HREF="indexPrint.css" media="print">
+
+<link rel="apple-touch-icon" type="image/png" href="apple-touch-icon.png" />
+
+</head>
+<body>
+
+<!--tableがないとmarginがうまくいかない?-->
+<table border=0><tr><td>
+  <div id="paper" class="paperClass"></div>
+</td></tr></table>
+
+<table border=0 id="wrapPaperTable"><tr><td>
+  <div id="wrapPaper"class="paperClass"></div>
+</td></tr></table>
+
+<!-- ツール -->
+<div  id="tool" class="printNone">
+  <div id="toolPaper" class="border">
+  </div>
+</div>
+
+<div id="rightTool" border=1 class="printNone">
+  <div id = "toolRightButton" class="border"></div>
+  
+  <div id="saveDataTxt" class="border">
+    <input id="inputSaveData" class="innerSaveDataTxt" type="text" value="" size="30"/>
+    <div onclick="saveOpenData('string','open')" id="miniOpen">open</div>
+    <div id="guideText" class="innerSaveDataTxt"></div>
+  </div>
+  
+  <div id="subTools" style="display:none">
+    <div id="subToolWrapPaperText" class="border">
+      <TEXTAREA cols="30" rows="3" value="" id="textWrapPaper"></TEXTAREA>
+      <div id="buttonWrapPaperTextCreate"></div>
+      <div id="buttonWrapPaperTextChanbe"></div>
+    </div>
+  </div>
+</div>
+<!-- 完成後はrequire.jsを用いる-->
+<!-- Library src -->
+<script src="lib/jquery-1.9.1.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="lib/json2.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="lib/underscore.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="lib/backbone-min.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="lib/raphael-min.js" type="text/javascript" charset="utf-8">
+</script>
+
+<!-- Javascript src -->
+<script src="src/index.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexCreateSymbol.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexCreateTool.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexPathString.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexSub.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexOther.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexDrag.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="src/indexCopy.js" type="text/javascript" charset="utf-8">
+</script>
+
+<script src="src/indexWrapPaper.js" type="text/javascript" charset="utf-8">
+</script>
+
+<p style="text-align:right;background-color:white;color:black;border-style:none;clear:both;"><a href="/contact"><img src="/image/ecl_footer.png" alt="operated by Kindai ECL" /></a></p></body>
+</html>

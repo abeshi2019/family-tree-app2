@@ -1,0 +1,11 @@
+﻿/*
+印刷用のCSS
+不要なdivを消す
+*/
+
+.printNone{display: none;}
+
+div#paper{
+padding-bottom:0px;
+padding-right: 0px;
+}

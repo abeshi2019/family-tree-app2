@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# VERSION 0.1.4
+
+CACHE:
+index.html
+index.css
+indexPrint.css
+apple-touch-icon.png
+jquery-1.9.1.js
+raphael-min.js
+index.js
+indexCopy.js
+indexCreateSymbol.js
+indexCreateTool.js
+indexDrag.js
+indexOther.js
+indexPathString.js
+indexSub.js
+indexWrapPaper.js
+
+

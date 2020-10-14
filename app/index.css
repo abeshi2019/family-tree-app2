@@ -1,0 +1,65 @@
+body{
+margin:0;
+}
+
+#paper{
+padding-right:285px;
+padding-bottom:75px;
+}
+
+.paperClass{
+display:block;
+}
+
+#wrapPaperTable{
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+#tool{
+position: fixed !important;
+position: absolute;
+bottom: 5px;
+left: 5px;
+}
+
+#rightTool{
+position: fixed !important;
+position: absolute;
+top: 5px;
+right: 5px;
+width: 280px;
+}
+
+#toolRightButton{
+margin-bottom:5px;
+}
+
+#saveDataTxt{
+display:none;
+}
+
+#miniOpen{
+width: 45px;
+line-height: 25px;
+text-align: center;
+border-color:black;
+border-style:solid;
+border-width: 2px;
+background-color : white;
+font-size: 12px;
+}
+
+.innerSaveDataTxt{
+margin:5px;
+}
+
+.border{
+border-color:black;
+border-style:solid;
+border-width: 2px;
+background-color : white;
+font-size: 12px;
+text-align: center;
+}
