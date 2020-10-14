@@ -2,6 +2,12 @@
 <!-- Using application cache -->
 <html lang="ja">
 <head>
+  
+ <script>
+const startTime = performance.now(); // 開始時間
+</script>
+  
+  
 <meta charset="UTF-8" />
 <!--フルスクリーン -->
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -84,6 +90,12 @@
 </script>
 
 <script src="src/indexWrapPaper.js" type="text/javascript" charset="utf-8">
+</script>
+  
+<script>
+const endTime = performance.now(); // 終了時間
+console.log(endTime - startTime);
+document.write(endTime - startTime);
 </script>
   
 
